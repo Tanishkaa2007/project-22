@@ -19,7 +19,7 @@ function preload()
 function setup() {
 	createCanvas(800, 750);
 
-	fairyVoice.play();
+	
 
 	fairy = createSprite(130, 520);
 	fairy.addAnimation("fairyflying",fairyImg);  
@@ -43,7 +43,8 @@ function setup() {
 
 function draw() {
   background(bgImg);
-  
+  fairyVoice.play();
+	
   star.x = starBody.position.x;
   star.y = starBody.position.y;
 
